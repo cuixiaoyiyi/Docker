@@ -21,6 +21,8 @@ docker ps
 docker 启动
 ```
 docker run -m 50G --cpus=46 -it -v /:/HostServer c-ubuntu-01:latest  /bin/bash
+docker run -m 50G --cpuset-cpus="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39" -it -v /:/HostServer c-ubuntu-01:latest  /bin/bash
+
 // -m 50G 内存上限50G
 // --cpus=46 CPU 核数上限
 // -v /:/HostServer  将原目录挂载在docker目录下   /原目录:/docker目录
